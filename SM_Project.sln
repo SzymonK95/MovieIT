@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM_Project", "SM_Project\SM_Project.csproj", "{D0FCD21C-39BC-435A-97AF-1E121365A7EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SM_Project", "SM_Project\SM_Project.csproj", "{D0FCD21C-39BC-435A-97AF-1E121365A7EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieITDatabase", "MovieITDatabase\MovieITDatabase.csproj", "{22F7266C-EB19-4C9A-B75D-424EA22DF79F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieITScrapper", "MovieITScrapper\MovieITScrapper\MovieITScrapper.csproj", "{B3177C9E-1E95-4680-A7CC-7BBA9A08CC68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{D0FCD21C-39BC-435A-97AF-1E121365A7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0FCD21C-39BC-435A-97AF-1E121365A7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0FCD21C-39BC-435A-97AF-1E121365A7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F7266C-EB19-4C9A-B75D-424EA22DF79F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F7266C-EB19-4C9A-B75D-424EA22DF79F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F7266C-EB19-4C9A-B75D-424EA22DF79F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F7266C-EB19-4C9A-B75D-424EA22DF79F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3177C9E-1E95-4680-A7CC-7BBA9A08CC68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3177C9E-1E95-4680-A7CC-7BBA9A08CC68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3177C9E-1E95-4680-A7CC-7BBA9A08CC68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3177C9E-1E95-4680-A7CC-7BBA9A08CC68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
