@@ -36,6 +36,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>C:\Users\Szymon\.nuget\packages\microsoft.entityframeworkcore\2.0.3\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -55,6 +58,8 @@
     <Compile Include="Cinema.cs">
       <DependentUpon>MovieITModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseProvider\DatabaseProvider.cs" />
+    <Compile Include="DatabaseProvider\IDatabaseProvider.cs" />
     <Compile Include="Director.cs">
       <DependentUpon>MovieITModel.tt</DependentUpon>
     </Compile>
@@ -123,6 +128,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovieITDatabase.Models\MovieITDatabase.Models.csproj">
+      <Project>{a6b1b4b9-44d3-4ac9-9440-53d404165762}</Project>
+      <Name>MovieITDatabase.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
