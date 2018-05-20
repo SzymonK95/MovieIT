@@ -86,11 +86,17 @@ namespace MovieITDatabase.DatabaseProvider
             }
         }
 
-        public List<MovieITDatabase.Models.Seance> GetSeances()
+        public List<Models.Seance> GetSeances()
         {
             using (MovieITEntities context = new MovieITEntities())
             {
-                return context.Seances.ToList();
+                return context.Seances.Select(_ => new Models.Seance
+                {
+                    CinemaGuid = _.CinemaGuid.Value,
+                    MovieGuid = _.MovieGuid.Value,
+                    SeanceGuid = _.SeanceGuid,
+                    ShowDate = _.ShowDate.Value
+                }).ToList();
             }
         }
     }
